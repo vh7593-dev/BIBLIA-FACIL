@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preload" as="image" href="hero-bible.webp" fetchpriority="high">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Bíblia Revelada | O Panorama Completo do Gênesis ao Apocalipse</title>
+    <meta name="description" content="Domine o entendimento da Bíblia com o panorama completo de A Bíblia Revelada. Descubra os segredos do Gênesis ao Apocalipse de forma clara, profunda e transformadora.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap&font-display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap&font-display=swap" rel="stylesheet"></noscript>
+    <style>
+:root {
+    /* Premium Champagne Gold Palette */
+    --primary: #D4AF37; 
+    --primary-light: #FDE6A2;
+    --primary-dark: #997312;
+    --bg-deep: #08040b;
+    --bg-section: #0c0812;
+    --text-main: #f5f0f7;
+    --text-dim: #b8b0c2;
+    /* Soft Metallic Gold Gradient */
+    --gradient-primary: linear-gradient(135deg, #FDE6A2 0%, #D4AF37 40%, #B88A44 100%);
+    --gradient-dark: linear-gradient(135deg, #181124 0%, #0c0812 100%);
+    --glass: rgba(16, 10, 24, 0.4);
+    --transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+html, body { 
+    overflow-x: hidden; 
+    background: var(--bg-deep); 
+    color: var(--text-main);
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 { 
+    font-family: 'Outfit', sans-serif; 
+    font-weight: 400; /* Removed 900 for a more elegant, serious look */
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+}
+
+h1, h2, h3 p, span { letter-spacing: -0.02em; }
+
+h1 { font-size: 34px; font-weight: 700; }
+h2 { font-size: 28px; font-weight: 500;}
+@media (min-width: 768px) { h1 { font-size: 56px; } h2 { font-size: 38px; } }
+
+p { font-size: 18px; color: var(--text-dim); }
+@media (min-width: 768px) { p { font-size: 19px; } }
+
+.gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    text-shadow: 0 0 40px rgba(212, 175, 55, 0.2);
+    display: inline-block;
+}
+
+.primary-text {
+    color: var(--primary-light);
+    font-weight: 700;
+}
+
+section {
+    padding: 60px 15px; /* Responsive mobile padding */
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    section {
+        padding: 90px 15px;
+    }
+}
+
+.container { max-width: 750px; margin: 0 auto; width: 100%; }
+.wide-container { max-width: 1000px; margin: 0 auto; width: 100%; }
+.ultra-wide-container { max-width: 1200px; margin: 0 auto; width: 100%; }
+
+/* --- Premium Ghost Hover Buttons & Main CTAs --- */
+.cta-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 75px;
+    background: var(--gradient-primary);
+    border-radius: 8px; /* Slightly sharper for elegance */
+    color: #1a1103;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.15), inset 0 1px 0 rgba(255,255,255,0.4);
+    transition: var(--transition);
+    border: 1px solid #FDE6A2;
+    cursor: pointer;
+    text-align: center;
+    text-shadow: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-btn::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 50%; height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.4), transparent);
+    transform: translateX(-200%) skewX(-20deg);
+    animation: shine 6s infinite;
+}
+
+@keyframes shine {
+    0% { transform: translateX(-200%) skewX(-20deg); }
+    20% { transform: translateX(300%) skewX(-20deg); }
+    100% { transform: translateX(300%) skewX(-20deg); }
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.3), inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+.cta-btn span:first-child { font-size: 18px; text-transform: uppercase; white-space: normal; letter-spacing: 0.02em; line-height: 1.2; display: block; padding: 0 10px; }
+.cta-btn span:last-child { font-size: 13px; font-weight: 500; opacity: 0.8; margin-top: 4px; }
+
+@media (min-width: 768px) {
+    .cta-btn span:first-child { font-size: 21px; }
+    .cta-btn span:last-child { font-size: 14px; }
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-deep); }
+::-webkit-scrollbar-thumb { background: var(--primary-dark); border-radius: 10px; }
+html { scrollbar-color: var(--primary-dark) var(--bg-deep); }
+
+.bg-alt { background: var(--bg-section); border-top: 1px solid rgba(255, 255, 255, 0.03); border-bottom: 1px solid rgba(255, 255, 255, 0.03); }
+.text-center { text-align: center; }
+.mb-15 { margin-bottom: 15px; }
+.mb-40 { margin-bottom: 50px; }
+
+/* Ticker Divider - Much softer now */
+.ticker-wrap {
+    overflow: hidden;
+    background: #050308;
+    padding: 18px 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.ticker-content { display: flex; white-space: nowrap; animation: ticker 40s linear infinite; }
+.ticker-item { display: flex; align-items: center; color: rgba(255,255,255,0.5); font-weight: 500; font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; padding: 0; }
+.ticker-sep { color: var(--primary-dark); font-size: 14px; margin: 0 15px; opacity: 0.6; }
+
+@keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+#urgency-bar {
+    background: var(--gradient-dark);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    padding: 14px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--primary-light);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+}
+@media (min-width: 768px) { #urgency-bar { font-size: 13px; } }
+
+/* Urgency Grid Layout */
+.urgency-grid {
+    display: grid;
+    gap: 40px;
+    grid-template-areas: 
+        "content"
+        "cta"
+        "image";
+    align-items: center;
+}
+
+.u-content { grid-area: content; text-align: center; display:flex; flex-direction: column; align-items: center;}
+.u-image { grid-area: image; width: 100%; max-width: 500px; margin: 0 auto; display: flex; justify-content: center; filter: drop-shadow(0 20px 40px rgba(212,175,55,0.1)); }
+.u-cta { grid-area: cta; text-align: center; margin-top: 0;}
+
+@media (min-width: 768px) {
+    .urgency-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "content image"
+            "cta image";
+        row-gap: 20px;
+        column-gap: 80px;
+        text-align: left;
+    }
+    .u-content { text-align: left; align-items: flex-start; }
+}
+
+#hero { 
+    position: relative;
+    background: radial-gradient(circle at top, #140c1e 0%, var(--bg-deep) 70%);
+    width: 100%;
+    padding: 0; 
+}
+
+#hero .container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    padding: 100px 20px 100px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+#hero .hero-subheadline {
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: var(--text-dim);
+    line-height: 1.5;
+    max-width: 650px;
+    font-weight: 300;
+}
+
+#hero .cta-btn {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 450px;
+}
+
+/* --- Aura Divina e Partículas Premium --- */
+.hero-aura {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80vw;
+    height: 80vw;
+    max-width: 800px;
+    max-height: 800px;
+    background: radial-gradient(circle, rgba(253, 230, 162, 0.08) 0%, rgba(212, 175, 55, 0.03) 40%, transparent 70%);
+    filter: blur(60px);
+    z-index: 0;
+    pointer-events: none;
+    animation: breatheHalo 8s ease-in-out infinite alternate;
+}
+
+@keyframes breatheHalo {
+    0% { transform: translateX(-50%) scale(0.95); opacity: 0.7; }
+    100% { transform: translateX(-50%) scale(1.05); opacity: 1; }
+}
+
+.particles-layer {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.6; /* Softer globally */
+}
+
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    animation: floatUp ease-in infinite;
+    bottom: -10%;
+    filter: blur(1px);
+}
+
+.p-gold { background: var(--primary-light); box-shadow: 0 0 15px var(--primary); width: 4px; height: 4px; }
+.p-white { background: #FFFFFF; box-shadow: 0 0 20px #FFFFFF; width: 3px; height: 3px; }
+.p-gold-lg { background: var(--primary-light); box-shadow: 0 0 25px var(--primary); width: 7px; height: 7px; }
+
+@keyframes floatUp {
+    0% { transform: translateY(0) scale(0.8); opacity: 0; }
+    30% { opacity: 0.5; }
+    70% { opacity: 0.5; }
+    100% { transform: translateY(-600px) scale(0.2); opacity: 0; }
+}
+
+/* Base Card CSS for Premium Feel */
+.premium-card {
+    background: var(--gradient-dark);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.05);
+    transition: var(--transition);
+    position: relative;
+}
+
+.premium-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(212,175,55,0.2), transparent);
+}
+
+.premium-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.6), 0 0 20px rgba(212, 175, 55, 0.05);
+    border-color: rgba(212, 175, 55, 0.15);
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    padding: 35px 30px;
+    text-align: left;
+}
+
+.t-stars { margin-bottom: 20px; }
+
+.t-text {
+    font-size: 16px;
+    color: var(--text-main);
+    margin-bottom: 25px;
+    font-style: normal;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+.t-author {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary-light);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.t-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--bg-deep);
+    border: 1px solid rgba(212,175,55,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    color: var(--primary-light);
+    font-size: 14px;
+}
+
+/* Summary Offer Card */
+.offer-card {
+    padding: 35px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.offer-footer {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .offer-card { padding: 60px; }
+    .offer-main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        align-items: center;
+        text-align: left;
+    }
+    .offer-footer { margin-top: 50px; }
+    .summary-list { width: 100%; }
+    .final-pricing { text-align: center !important; margin-bottom: 30px !important; width: 100%; }
+    .final-pricing .gradient-text { font-size: 72px !important; }
+    .offer-footer .cta-btn { width: 100% !important; max-width: 450px; margin-top: 0; }
+}
+
+.secure-badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 12px;
+    font-size: 13px;
+    color: var(--text-dim);
+    opacity: 0.8;
+}
+.secure-badges span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.secure-badges img {
+    width: 14px;
+    height: 14px;
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));
+}
+
+        .a-emoji { width: 1em; height: 1em; display: inline-block; vertical-align: -0.1em; }
+        .a-emoji-lg { width: 60px; height: 60px; display: inline-block; margin-bottom: 25px; filter: drop-shadow(0 15px 25px rgba(212,175,55,0.25)); }
+        .a-emoji-huge { width: 150px; height: 150px; filter: drop-shadow(0 20px 40px rgba(212,175,55,0.2)); }
+        .fixed-cta-mobile {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px 15px 15px; /* Menos espaçamento vertical superior */
+            background: linear-gradient(to top, rgba(4,2,6,1) 40%, transparent);
+            z-index: 10000;
+            display: none;
+            pointer-events: none;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .fixed-cta-mobile { display: block; }
+            .fixed-cta-mobile .cta-btn {
+                pointer-events: auto;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.9), 0 0 15px rgba(212,175,55,0.4);
+                width: 95%;
+                max-width: 320px;
+                min-height: 55px; /* Quebra o min-height 75px global */
+                margin: 0 auto;
+                padding: 10px 15px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                animation: pulseGlow 2s infinite;
+            }
+            .fixed-cta-mobile .cta-btn span:first-child { 
+                font-size: 15px; 
+                white-space: normal;
+                line-height: 1.1;
+            }
+        }
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 10px 30px rgba(0,0,0,0.9), 0 0 0 0 rgba(212,175,55,0.4); }
+            70% { box-shadow: 0 10px 30px rgba(0,0,0,0.9), 0 0 0 15px rgba(212,175,55,0); }
+            100% { box-shadow: 0 10px 30px rgba(0,0,0,0.9), 0 0 0 0 rgba(212,175,55,0); }
+        }
+    
+    .notif-container {
+        position: fixed;
+        top: 80px; /* Below the urgency bar */
+        left: 15px;
+        z-index: 100001;
+        max-width: 220px;
+        pointer-events: none;
+        transition: top 0.3s ease;
+    }
+    @media (max-width: 768px) {
+        .notif-container {
+            top: 60px;
+            left: 10px;
+            max-width: 200px;
+        }
+    }
+
+    .final-checkout-cta {
+        background: linear-gradient(135deg, #FFD700 0%, #daa520 100%) !important;
+        transform: scale(1.05);
+        box-shadow: 0 0 30px rgba(212, 175, 55, 0.4) !important;
+        animation: pulseCTA 2s infinite !important;
+    }
+    @keyframes pulseCTA {
+        0% { transform: scale(1.05); box-shadow: 0 0 20px rgba(212, 175, 55, 0.3); }
+        50% { transform: scale(1.08); box-shadow: 0 0 40px rgba(212, 175, 55, 0.6); }
+        100% { transform: scale(1.05); box-shadow: 0 0 20px rgba(212, 175, 55, 0.3); }
+    }
+</style>
+</head>
+<body>
+    
+    <!-- BARRA DE URGENCIA ESTATICA (ALTA PERFORMANCE) -->
+    <div id="barra-urgencia" style="position: relative; background: #040206; border-bottom: 1px solid rgba(212, 175, 55, 0.15); color: #fff; padding: 10px 15px; display: flex; align-items: center; justify-content: center; gap: 8px; font-weight: 300; font-size: 13px; z-index: 10000; letter-spacing: 0.02em; width: 100%; flex-wrap: wrap;">
+      <img loading="eager" decoding="async" style="width: 18px; height: 18px; filter: drop-shadow(0 0 5px rgba(212,175,55,0.5)); object-fit: contain;" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f525.png" width="18" height="18" alt="Fogo"> 
+      <strong style="color: var(--primary-light); font-weight: 500;">ALERTA DE VAGAS:</strong> Apenas <span id="contador-vagas" style="font-weight: 700; color: #fff; background: rgba(212, 175, 55, 0.15); padding: 2px 8px; border-radius: 4px; margin: 0 4px;">42</span> acessos vitálicios restantes nessa condição.
+    </div>
+
+    <header id="urgency-bar">
+        <img loading="lazy" decoding="async" class="a-emoji" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2728.png" width="16" height="16" alt="✨" style="width:16px; height:16px;"> DESCUBRA OS SEGREDOS DO GÊNESIS AO APOCALIPSE
+    </header>
+
+    <main><section id="hero">
+        <div class="hero-image-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; overflow: hidden; opacity: 0.5;">
+            <img src="hero-bible.webp" alt="A Bíblia Sagrada Revelada" fetchpriority="high" loading="eager" decoding="async" width="1920" height="1080" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.6);">
+        </div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <h1 class="hero-headline" style="max-width: 800px; margin-bottom: 30px;">
+                E se você finalmente conseguisse ouvir o que <span class="gradient-text">Deus realmente quer falar</span> com você?
+            </h1>
+            <p class="hero-subheadline" style="font-size: 20px; max-width: 800px; color: #fff; margin-bottom: 40px; font-weight: 300; line-height: 1.5;">
+                De Gênesis ao Apocalipse: o panorama completo que revela o plano divino de forma clara, profunda e transformadora.
+            </p>
+            
+            <a href="#summary" class="cta-btn">
+                <span>QUERO DESCOBRIR O QUE DEUS ESTÁ FALANDO COMIGO →</span>
+                <span>Inscrição Imediata • Acesso Vitalício</span>
+            </a>
+            <div class="secure-badges">
+                <span><img loading="lazy" decoding="async" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f512.png" width="16" height="16" alt="🔒" style="width:16px; height:16px;"> Compra Segura</span>
+                <span><img loading="lazy" decoding="async" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f4b3.png" width="16" height="16" alt="💳" style="width:16px; height:16px;"> Checkout Auditado</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="ticker-wrap">
+        <div class="ticker-content" id="nav-tickers">
+            <div class="ticker-item">GÊNESIS AO APOCALIPSE <span class="ticker-sep">✦</span> REVELAÇÕES DIVINAS <span class="ticker-sep">✦</span> 8 BÔNUS EXCLUSIVOS <span class="ticker-sep">✦</span> +1.028 ALUNOS <span class="ticker-sep">✦</span> A BÍBLIA REVELADA <span class="ticker-sep">✦</span> ESTRUTURA VALIDADA <span class="ticker-sep">✦</span> </div>
+            <div class="ticker-item">GÊNESIS AO APOCALIPSE <span class="ticker-sep">✦</span> REVELAÇÕES DIVINAS <span class="ticker-sep">✦</span> 8 BÔNUS EXCLUSIVOS <span class="ticker-sep">✦</span> +1.028 ALUNOS <span class="ticker-sep">✦</span> A BÍBLIA REVELADA <span class="ticker-sep">✦</span> ESTRUTURA VALIDADA <span class="ticker-sep">✦</span> </div>
+        </div>
+    </div>
+
+    <!-- PONTE 1 -->
+    <div class="container text-center" style="padding-top: 60px; margin-bottom: -30px;">
+        <p style="text-transform: uppercase; letter-spacing: 0.15em; color: var(--primary); font-size: 14px; font-weight: 700;">Veja o que acontece quando você finalmente entende a Palavra:</p>
+    </div>
+
+    <!-- PROVAS SOCIAIS -->
+    <section id="proof" >
+        <div class="wide-container">
+            <h2 class="mb-40">A <span class="gradient-text">transformação</span> de nossos alunos</h2>
+            
+            <div style="display: grid; gap: 30px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <div class="premium-card testimonial-card" style="text-align: center;">
+                    <div class="t-stars" style="display: flex; gap: 6px; justify-content: center; margin-bottom: 15px;">
+                        <img loading="lazy" decoding="async" class="a-emoji" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2b50.png" width="64" height="64" alt="⭐">
+                        <img loading="lazy" decoding="async" class="a-emoji" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2b50.png" width="64" height="64" alt="⭐">
+                        <img loading="lazy" decoding="async" class="a-emoji" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2b50.png" width="64" height="64" alt="⭐">
+                        <img loading="lazy" decoding="async" class="a-emoji" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2b50.png" width="64" height="64" alt="⭐">
+                        <img loading="lazy" decoding="async" class="a-emoji" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2b50.png" width="64" height="64" alt="⭐">
+                    </div>
+                    <p class="t-text" style="text-align: center;">"Sempre busquei entender os paralelos profundos do Antigo com o Novo Testamento, mas nada foi tão claro quanto A Bíblia Revelada. Meu momento de leitura mudou completamente de patamar."</p>
+                    <div class="t-author" style="justify-content: center; flex-direction: column; align-items: center; margin-top: 20px;">
+                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                            <div class="t-avatar">M</div>
+                            <span style="font-weight: 500; color: #fff;">Maria Helena S.</span>
+                        </div>
+                        <div style="font-size: 14px; color: var(--primary-light); margin-bottom: 4px;">⛪ Assembleia de Deus</div>
+                        <div style="font-size: 12px; color: #6ed196; display: flex; align-items: center; gap: 4px;"><img loading="lazy" decoding="async" class="a-emoji" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2705.png" style="width: 14px; height: 14px;" width="64" height="64" alt="✅"> Aluna Verificada</div>
+                    </div>
+                </div>
+
+                <div class="premium-card testimonial-card" style="text-align: center;">
+                    <div class="t-stars" style="display: flex; gap: 6px; justify-content: center; margin-bottom: 15px;">
+                        <img loading="lazy" decoding="async" class="a-emoji" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2b50.png" width="64" height="64" alt="⭐">
+                        <img loading="lazy" decoding="async" class="a-emoji" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2b50.png" width="64" height="64" alt="⭐">
+                        <img loading="lazy" decoding="async" class="a-emoji" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2b50.png" width="64" height="64" alt="⭐">
+                        <img loading="lazy" decoding="async" class="a-emoji" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2b50.png" width="64" height="64" alt="⭐">
+                        <img loading="lazy" decoding="async" class="a-emoji" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2b50.png" width="64" height="64" alt="⭐">
+                    </div>
+                    <p class="t-text" style="text-align: center;">"Os 8 bônus que acompanham esse material valem facilmente o triplo do preço. Traz um embasamento maduro e sem sensacionalismo para os temas cruciais da fé. Recomendadíssimo para líderes."</p>
+                    <div class="t-author" style="justify-content: center; flex-direction: column; align-items: center; margin-top: 20px;">
+                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                            <div class="t-avatar">J</div>
+                            <span style="font-weight: 500; color: #fff;">João Carlos L.</span>
+                        </div>
+                        <div style="font-size: 14px; color: var(--primary-light); margin-bottom: 4px;">⛪ Igreja Presbiteriana</div>
+                        <div style="font-size: 12px; color: #6ed196; display: flex; align-items: center; gap: 4px;"><img loading="lazy" decoding="async" class="a-emoji" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2705.png" style="width: 14px; height: 14px;" width="64" height="64" alt="✅"> Aluno Verificado</div>
+                    </div>
+                </div>
+
+                <div class="premium-card testimonial-card" style="text-align: center;">
+                    <div class="t-stars" style="display: flex; gap: 6px; justify-content: center; margin-bottom: 15px;">
+                        <img loading="lazy" decoding="async" class="a-emoji" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2b50.png" width="64" height="64" alt="⭐">
+                        <img loading="lazy" decoding="async" class="a-emoji" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2b50.png" width="64" height="64" alt="⭐">
+                        <img loading="lazy" decoding="async" class="a-emoji" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2b50.png" width="64" height="64" alt="⭐">
+                        <img loading="lazy" decoding="async" class="a-emoji" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2b50.png" width="64" height="64" alt="⭐">
+                        <img loading="lazy" decoding="async" class="a-emoji" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2b50.png" width="64" height="64" alt="⭐">
+                    </div>
+                    <p class="t-text" style="text-align: center;">"Tempos difíceis exigem alicerce firme. A didática e a apresentação me prenderam. Consigo, como leiga, absorver conhecimentos muito ricos sem sentir exaustão espiritual. Material majestoso."</p>
+                    <div class="t-author" style="justify-content: center; flex-direction: column; align-items: center; margin-top: 20px;">
+                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                            <div class="t-avatar">L</div>
+                            <span style="font-weight: 500; color: #fff;">Pastora Luciana G.</span>
+                        </div>
+                        <div style="font-size: 14px; color: var(--primary-light); margin-bottom: 4px;">⛪ Igreja Batista Renovada</div>
+                        <div style="font-size: 12px; color: #6ed196; display: flex; align-items: center; gap: 4px;"><img loading="lazy" decoding="async" class="a-emoji" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2705.png" style="width: 14px; height: 14px;" width="64" height="64" alt="✅"> Aluna Verificada</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 50px; text-align: center;">
+                <a href="https://pay.wiapy.com/VFkUkQv5uX" class="cta-btn" style="max-width: 450px; margin: 0 auto;">
+                    <span>SIM, QUERO ENTENDER A BÍBLIA DE VERDADE →</span>
+                    <span>Pagamento Único • Acesso Vitalício</span>
+                </a>
+                <div class="secure-badges">
+                    <span><img loading="lazy" decoding="async" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f512.png" width="16" height="16" alt="🔒" style="width:16px; height:16px;"> Compra Segura</span>
+                    <span><img loading="lazy" decoding="async" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f4b3.png" width="16" height="16" alt="💳" style="width:16px; height:16px;"> Checkout Auditado</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PONTE 2 -->
+    <div class="container text-center" style="padding-top: 60px; margin-bottom: -30px;">
+        <p style="text-transform: uppercase; letter-spacing: 0.15em; color: var(--primary); font-size: 14px; font-weight: 700;">Mas nós sabemos que nem sempre a leitura é fácil assim...</p>
+    </div>
+
+    <!-- A DOR -->
+    <section id="pain" class="bg-alt" >
+        <div class="container text-center">
+            <h2 class="mb-40" style="color: #cbb4e3; font-weight: 500; font-size: 38px;">A Verdade Dura:</h2>
+            <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 50px; max-width: 1000px; margin: 0 auto; text-align: center;">
+                <div style="flex: 1; min-width: 300px; max-width: 450px; position: relative;">
+                    <div style="position: absolute; top: -15px; left: -15px; right: -15px; bottom: -15px; background: radial-gradient(circle, rgba(203,180,227,0.15) 0%, transparent 70%); border-radius: 20px; z-index: 0;"></div>
+                    <img loading="lazy" decoding="async" src="dor.webp" width="720" height="1280" alt="Frustração ao ler a Bíblia" style="position: relative; z-index: 1; width: 100%; height: auto; max-height: 550px; object-fit: cover; border-radius: 16px; box-shadow: 0 25px 50px rgba(0,0,0,0.8); border: 1px solid rgba(203, 180, 227, 0.2); filter: contrast(1.1) brightness(0.9); aspect-ratio: 720 / 1280; object-position: center top;">
+                </div>
+                <div style="flex: 1; min-width: 300px; font-size: 20px; color: #fff; line-height: 1.8; font-weight: 300; text-align: left;">
+                    <p style="margin-bottom: 25px;">Você abre a Bíblia com vontade… mas depois de alguns minutos já se sente <strong style="color: #ff5e5e;">perdido, confuso e até culpado</strong>.</p>
+                    <p style="margin-bottom: 25px;">Lê as palavras, mas não entende o que Deus está querendo dizer com aquilo. As histórias não se conectam.</p>
+                    <p style="margin-bottom: 25px;">As profecias viram um mistério sem fim. E você termina a leitura pensando: <strong style="color: var(--primary-light);">“Será que sou eu que não tenho discernimento?”</strong></p>
+                    <p style="margin-bottom: 0;">Milhões de cristãos vivem isso todos os dias… e é exatamente aqui que a gente vai mudar a sua história.</p>
+                </div>
+            </div>
+            
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="premium-card" style="padding: 35px; margin-top: 50px; text-align: center; border-left: 3px solid var(--primary); border-right: none; border-bottom: none; border-top: none; border-radius: 0 16px 16px 0;">
+                    <p style="font-size: 20px; color: var(--primary-light); font-style: italic; font-weight: 400; margin: 0; line-height: 1.6;">
+                        "Milhões de cristãos vivem exatamente isso todos os dias… e acabam se afastando da Palavra que mais poderiam precisar."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- A SOLUÇÃO -->
+    <section id="solution" >
+        <div class="container text-center">
+            <h2 class="mb-40 gradient-text" style="font-size: 42px;">Chegou a hora de<br>mudar isso.</h2>
+            
+            <div class="premium-card" style="padding: 60px 40px; text-align: center; max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;">
+                <p style="font-size: 20px; color: var(--text-main); line-height: 1.7; font-weight: 300;">
+                    Imagina, pela primeira vez na vida, abrir a Bíblia e <strong style="color: var(--primary-light); font-weight: 600;">realmente entender</strong> o que Deus está falando diretamente com você.
+                </p>
+                <p style="font-size: 19px; color: var(--text-dim); line-height: 1.7; font-weight: 300;">
+                    Imagina ter um <strong style="color: #fff; font-weight: 500;">mapa claro, vivo e descomplicado</strong> que revela o coração do Pai em cada página — do Gênesis ao Apocalipse.
+                </p>
+                <p style="font-size: 19px; color: var(--text-dim); line-height: 1.8; font-weight: 300;">
+                    Imagina sentir o <strong style="color: #fff; font-weight: 500;">discernimento divino fluindo no seu espírito</strong>, percebendo com clareza o que o Senhor quer para a sua vida, para a sua família e para o seu futuro.
+                </p>
+                <div style="margin-top: 15px; padding-top: 25px; border-top: 1px solid rgba(212,175,55,0.2);">
+                    <p style="font-size: 20px; color: var(--primary-light); line-height: 1.7; font-weight: 500;">
+                        Imagina não apenas ler a Palavra… mas encontrar o próprio Deus dentro dela.
+                    </p>
+                    <p style="font-size: 18px; color: var(--text-main); margin-top: 15px; line-height: 1.7; font-weight: 300;">
+                        <strong style="color: #fff; font-weight: 500;">A Bíblia Revelada</strong> foi criada exatamente para isso: conectar você de forma profunda, real e transformadora com o coração do Pai. Não é mais um livro difícil. É o encontro que você sempre quis ter com Deus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARA QUEM É -->
+    <section id="for-who" class="bg-alt" style="padding: 60px 15px; position: relative;">
+        <div class="container" style="max-width: 800px; display: flex; flex-direction: column; gap: 15px;">
+            <p style="text-align: center; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; color: var(--primary); font-weight: 700; margin-bottom: 25px;">Isto é especialmente para você se...</p>
+            
+            <div class="premium-card" style="padding: 25px 30px; text-align: left; display: flex; align-items: center; gap: 20px;">
+                <img loading="lazy" decoding="async" style="width: 18px; height: 18px; flex-shrink: 0;" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2705.png" width="64" height="64" alt="Sim">
+                <span style="font-size: 18px; color: #fff; font-weight: 400; line-height: 1.5;">Você quer entender onde cada acontecimento bíblico realmente aconteceu</span>
+            </div>
+            
+            <div class="premium-card" style="padding: 25px 30px; text-align: left; display: flex; align-items: center; gap: 20px;">
+                <img loading="lazy" decoding="async" style="width: 18px; height: 18px; flex-shrink: 0;" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2705.png" width="64" height="64" alt="Sim">
+                <span style="font-size: 18px; color: #fff; font-weight: 400; line-height: 1.5;">Você sente que falta algo concreto e transformador para aprofundar sua fé</span>
+            </div>
+            
+            <div class="premium-card" style="padding: 25px 30px; text-align: left; display: flex; align-items: center; gap: 20px;">
+                <img loading="lazy" decoding="async" style="width: 18px; height: 18px; flex-shrink: 0;" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2705.png" width="64" height="64" alt="Sim">
+                <span style="font-size: 18px; color: #fff; font-weight: 400; line-height: 1.5;">Você quer transformar seu devocional em uma experiência que emociona de verdade</span>
+            </div>
+            
+            <div class="premium-card" style="padding: 25px 30px; text-align: left; display: flex; align-items: center; gap: 20px;">
+                <img loading="lazy" decoding="async" style="width: 18px; height: 18px; flex-shrink: 0;" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2705.png" width="64" height="64" alt="Sim">
+                <span style="font-size: 18px; color: #fff; font-weight: 400; line-height: 1.5;">Você ensina, prega ou lidera estudos e quer material de estudo que impacta qualquer pessoa</span>
+            </div>
+            
+            <div class="premium-card" style="margin-top: 10px; padding: 25px 30px; text-align: left; display: flex; align-items: center; gap: 20px; background: rgba(255, 94, 94, 0.05); border: 1px solid rgba(255, 94, 94, 0.2);">
+                <img loading="lazy" decoding="async" style="width: 18px; height: 18px; flex-shrink: 0;" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/274c.png" width="64" height="64" alt="Não">
+                <span style="font-size: 18px; color: var(--text-dim); font-weight: 400; font-style: italic; line-height: 1.5;">NÃO é para quem não leva a sério o desejo de conhecer mais a Palavra de Deus</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section id="how-it-works">
+        <div class="container text-center">
+            <h2 class="mb-15"><span class="gradient-text">Como Funciona</span> 'A Bíblia Revelada'</h2>
+            <p style="font-size: 20px; color: var(--primary-light); margin-bottom: 25px; font-weight: 500;">
+                Não é apenas um livro, é o mapa definitivo para a Palavra de Deus.
+            </p>
+            <p style="font-size: 18px; color: var(--text-dim); max-width: 700px; margin: 0 auto 50px; line-height: 1.6; font-weight: 300;">
+                Desenvolvemos um guia prático e visual. Esqueça as leituras cansativas e confusas. Descomplicamos as Escrituras para te levar a uma compreensão profunda e imediata:
+            </p>
+
+            <div style="display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-bottom: 50px; text-align: left;">
+                <!-- Item 01 -->
+                <div class="premium-card" style="padding: 25px; display: flex; gap: 15px; align-items: flex-start;">
+                    <img loading="lazy" decoding="async" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f5fa-fe0f.png" width="32" height="32" alt="🗺️" style="width: 32px; height: 32px; flex-shrink: 0; filter: drop-shadow(0 5px 10px rgba(212,175,55,0.2));">
+                    <div>
+                        <h3 style="font-size: 18px; color: #fff; margin-bottom: 8px; text-align: left; font-weight: 600;">Panorama Visual Completo</h3>
+                        <p style="font-size: 15px; line-height: 1.5; color: var(--text-dim); font-weight: 300;">Um material digital (PDF) que funciona como um mapa visual. Personagens, contexto histórico e temas centrais de Gênesis ao Apocalipse, tudo conectado.</p>
+                    </div>
+                </div>
+
+                <!-- Item 02 -->
+                <div class="premium-card" style="padding: 25px; display: flex; gap: 15px; align-items: flex-start;">
+                    <img loading="lazy" decoding="async" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f4d6.png" width="32" height="32" alt="📖" style="width: 32px; height: 32px; flex-shrink: 0; filter: drop-shadow(0 5px 10px rgba(212,175,55,0.2));">
+                    <div>
+                        <h3 style="font-size: 18px; color: #fff; margin-bottom: 8px; text-align: left; font-weight: 600;">Resumo Atualizado</h3>
+                        <p style="font-size: 15px; line-height: 1.5; color: var(--text-dim); font-weight: 300;">Um resumo conciso de toda a Bíblia. Perfeito para revisões rápidas e para ter sempre à mão os pontos cruciais de cada livro.</p>
+                    </div>
+                </div>
+
+                <!-- Item 03 -->
+                <div class="premium-card" style="padding: 25px; display: flex; gap: 15px; align-items: flex-start;">
+                    <img loading="lazy" decoding="async" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f5e3-fe0f.png" width="32" height="32" alt="🗣️" style="width: 32px; height: 32px; flex-shrink: 0; filter: drop-shadow(0 5px 10px rgba(212,175,55,0.2));">
+                    <div>
+                        <h3 style="font-size: 18px; color: #fff; margin-bottom: 8px; text-align: left; font-weight: 600;">Linguagem Simples</h3>
+                        <p style="font-size: 15px; line-height: 1.5; color: var(--text-dim); font-weight: 300;">Sem jargões teológicos difíceis. Nosso foco é que você entenda a aplicação prática para a sua vida hoje de forma direta.</p>
+                    </div>
+                </div>
+
+                <!-- Item 04 -->
+                <div class="premium-card" style="padding: 25px; display: flex; gap: 15px; align-items: flex-start;">
+                    <img loading="lazy" decoding="async" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f4f1.png" width="32" height="32" alt="📱" style="width: 32px; height: 32px; flex-shrink: 0; filter: drop-shadow(0 5px 10px rgba(212,175,55,0.2));">
+                    <div>
+                        <h3 style="font-size: 18px; color: #fff; margin-bottom: 8px; text-align: left; font-weight: 600;">Digital e Vitalício</h3>
+                        <p style="font-size: 15px; line-height: 1.5; color: var(--text-dim); font-weight: 300;">Acesso imediato! Baixe no seu celular, tablet ou computador e estude onde quiser, mesmo sem internet. É seu para sempre.</p>
+                    </div>
+                </div>
+
+                <!-- Item 05 (Destaque) -->
+                <div class="premium-card" style="padding: 25px; display: flex; gap: 15px; align-items: flex-start; grid-column: 1 / -1; border-color: rgba(212, 175, 55, 0.2);">
+                    <img loading="lazy" decoding="async" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2b50.png" width="32" height="32" alt="⭐" style="width: 32px; height: 32px; flex-shrink: 0; filter: drop-shadow(0 5px 10px rgba(212,175,55,0.3));">
+                    <div>
+                        <h3 style="font-size: 18px; color: var(--primary-light); margin-bottom: 8px; text-align: left; font-weight: 600;">Estrutura Validada</h3>
+                        <p style="font-size: 15px; line-height: 1.5; color: #fff; font-weight: 300;">Testado e aprovado por teólogos, pastores e mais de 1.028 cristãos que buscam profundidade bíblica.</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://pay.wiapy.com/VFkUkQv5uX" class="cta-btn" style="max-width: 450px; margin: 0 auto;">
+                <span>QUERO MEU MAPA BÍBLICO AGORA! →</span>
+                <span>Inscrição Imediata • Clique e Comece</span>
+            </a>
+            <div class="secure-badges">
+                <span><img loading="lazy" decoding="async" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f512.png" width="16" height="16" alt="🔒" style="width:16px; height:16px;"> Compra Segura</span>
+                <span><img loading="lazy" decoding="async" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f4b3.png" width="16" height="16" alt="💳" style="width:16px; height:16px;"> Checkout Auditado</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estrutura Validada -->
+    <section id="demo" class="bg-alt" >
+        <div class="container text-center">
+            <h2 class="mb-40">Estrutura <span class="gradient-text">Validada</span></h2>
+            <p style="font-size: 19px; color: var(--text-dim); max-width: 700px; margin: 0 auto 50px; line-height: 1.6; font-weight: 300;">
+                Material aprovado por <strong style="color: #fff; font-weight: 500;">Pastores, Teólogos, Líderes</strong> e mais de <strong style="color: #fff; font-weight: 500;">1.028 cristãos</strong> que transformaram sua compreensão da Palavra de Deus.
+            </p>
+            
+            <div class="benefits-grid" style="display: grid; gap: 20px; transition: all 0.3s ease; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin-bottom: 40px;">
+                <div class="premium-card text-center" style="padding: 40px 20px;">
+                    <h3 style="font-size: 18px; margin-bottom: 15px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500;">Vidas Transformadas</h3>
+                    <p class="gradient-text" style="font-size: 48px; font-weight: 700;">+1.028</p>
+                </div>
+                <div class="premium-card text-center" style="padding: 40px 20px;">
+                    <h3 style="font-size: 18px; margin-bottom: 15px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500;">Compreensão Profunda</h3>
+                    <p class="gradient-text" style="font-size: 26px; font-weight: 700; line-height: 1.3; align-self: center;">Gênesis ao<br>Apocalipse</p>
+                </div>
+                <div class="premium-card text-center" style="padding: 40px 20px;">
+                    <h3 style="font-size: 18px; margin-bottom: 15px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500;">Intimidade c/ Deus</h3>
+                    <p class="gradient-text" style="font-size: 32px; font-weight: 700; line-height: 1.3;">Elevada a outro nível</p>
+                </div>
+                <div class="premium-card text-center" style="padding: 40px 20px;">
+                    <h3 style="font-size: 18px; margin-bottom: 15px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500;">Estudos Inclusos</h3>
+                    <p class="gradient-text" style="font-size: 38px; font-weight: 700;">8 Bônus</p>
+                </div>
+            </div>
+            
+            <a href="https://pay.wiapy.com/VFkUkQv5uX" class="cta-btn" style="max-width: 450px; margin: 0 auto;">
+                <span>SIM, QUERO ENTENDER A BÍBLIA DE VERDADE →</span>
+                <span>Pagamento Único • Acesso Vitalício</span>
+            </a>
+            <div class="secure-badges">
+                <span><img loading="lazy" decoding="async" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f512.png" width="16" height="16" alt="🔒" style="width:16px; height:16px;"> Compra Segura</span>
+                <span><img loading="lazy" decoding="async" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f4b3.png" width="16" height="16" alt="💳" style="width:16px; height:16px;"> Checkout Auditado</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- S05 - BENEFÍCIOS -->
+    <section id="benefits" class="bg-alt" >
+        <div class="wide-container text-center">
+            <h2 class="mb-40 gradient-text" style="font-size: 38px;">O que muda na sua vida com<br>A Bíblia Revelada:</h2>
+            
+            <div class="benefits-grid" style="display: grid; gap: 30px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); text-align: left;">
+                <div class="premium-card text-center" style="padding: 50px 30px;">
+                    <img loading="lazy" decoding="async" class="a-emoji-lg" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f4dc.png" width="64" height="64" alt="📜">
+                    <h3 style="font-size: 20px; font-weight: 500; margin-bottom: 15px; color: var(--primary-light);">Clareza Divina</h3>
+                    <p style="font-size: 16px; font-weight: 300;">Entenda cada livro de ponta a ponta sem ficar perdido.</p>
+                </div>
+                <div class="premium-card text-center" style="padding: 50px 30px;">
+                    <img loading="lazy" decoding="async" class="a-emoji-lg" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f517.png" width="64" height="64" alt="🔗">
+                    <h3 style="font-size: 20px; font-weight: 500; margin-bottom: 15px; color: var(--primary-light);">Conexões Reveladas</h3>
+                    <p style="font-size: 16px; font-weight: 300;">Veja todos os mistérios que ligam Gênesis ao Apocalipse.</p>
+                </div>
+                <div class="premium-card text-center" style="padding: 50px 30px;">
+                    <img loading="lazy" decoding="async" class="a-emoji-lg" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f451.png" width="64" height="64" alt="👑">
+                    <h3 style="font-size: 20px; font-weight: 500; margin-bottom: 15px; color: var(--primary-light);">Reino Dominado</h3>
+                    <p style="font-size: 16px; font-weight: 300;">Domine o plano divino da salvação sem precisar ser teólogo.</p>
+                </div>
+                <div class="premium-card text-center" style="padding: 50px 30px;">
+                    <img loading="lazy" decoding="async" class="a-emoji-lg" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2b50.png" width="64" height="64" alt="⭐">
+                    <h3 style="font-size: 20px; font-weight: 500; margin-bottom: 15px; color: var(--primary-light);">Transformação Real</h3>
+                    <p style="font-size: 16px; font-weight: 300;">Viva na pele a mudança real na sua caminhada com Deus.</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 60px; display: flex; flex-direction: column; align-items: center;">
+                <a href="https://pay.wiapy.com/VFkUkQv5uX" class="cta-btn" style="max-width: 450px;">
+                    <span>SIM, QUERO ENTENDER A BÍBLIA DE VERDADE →</span>
+                    <span>Pagamento Único • Acesso Vitalício</span>
+                </a>
+                <div class="secure-badges">
+                    <span><img loading="lazy" decoding="async" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f512.png" width="16" height="16" alt="🔒" style="width:16px; height:16px;"> Compra Segura</span>
+                    <span><img loading="lazy" decoding="async" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f4b3.png" width="16" height="16" alt="💳" style="width:16px; height:16px;"> Checkout Auditado</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- S06 -->
+    <section id="urgency">
+        <div class="container wide-container">
+            <div style="max-width: 650px; margin: 0 auto; text-align: center;">
+                <div style="margin-bottom: 40px;">
+                    <h2 class="mb-40" style="margin-bottom: 20px;">Sua jornada de <span class="gradient-text">Iluminação Plena.</span></h2>
+                    <p style="font-size: 18px; margin-bottom: 25px; line-height: 1.6;">O pacote integral, incluindo os 8 Tratados Especias Sobre o Apocalipse, ficará acessível com as novas condições apenas durante:</p>
+                    
+                    <div id="countdown" style="font-size: 64px; font-weight: 700; color: var(--primary-light); font-family: 'Outfit', sans-serif; text-shadow: 0 0 30px rgba(212,175,55,0.4);">
+                        30:00
+                    </div>
+                </div>
+
+                <div>
+                    <a href="https://pay.wiapy.com/VFkUkQv5uX" class="cta-btn" style="max-width:450px; margin: 0 auto;">
+                        <span>SIM, QUERO ENTENDER A BÍBLIA DE VERDADE →</span>
+                        <span>Pagamento Único • Acesso Vitalício</span>
+                    </a>
+                    <div class="secure-badges">
+                        <span><img loading="lazy" decoding="async" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f512.png" width="16" height="16" alt="🔒" style="width:16px; height:16px;"> Compra Segura</span>
+                        <span><img loading="lazy" decoding="async" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f4b3.png" width="16" height="16" alt="💳" style="width:16px; height:16px;"> Checkout Auditado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="ticker-wrap">
+        <div class="ticker-content" id="nav-tickers-3"></div>
+    </div>
+    <script>document.getElementById('nav-tickers-3').innerHTML = document.getElementById('nav-tickers').innerHTML; </script>
+
+    <!-- S09 -->
+    <section id="bonus" class="bg-alt wide-section">
+        <div class="ultra-wide-container">
+            <h2 class="mb-40">Ao adquirir hoje, você desbloqueia <span class="gradient-text">8 Materiais Extras:</span></h2>
+            
+            <div class="bonus-grid" style="display: grid; gap: 30px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                
+                <div class="premium-card text-center" style="padding: 40px 20px;">
+                    <img loading="lazy" decoding="async" class="a-emoji-lg" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f4d6.png" width="64" height="64" alt="📖">
+                    <br><div style="background: rgba(212, 175, 55, 0.1); color: var(--primary-light); border: 1px solid rgba(212, 175, 55, 0.2); font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 20px; display: inline-block; margin-bottom: 15px; text-transform: uppercase;">Acesso Premium</div>
+                    <h3 style="font-size: 20px; font-weight: 500; margin-bottom: 10px;">A Mulher Vestida de Sol</h3>
+                    <div style="font-size: 18px; margin-top:20px;">
+                        <span style="text-decoration: line-through; opacity: 0.4;">De R$ 97 por</span> <span style="color: #6ed196; font-weight: 700; font-size: 19px;">ZERO</span>
+                    </div>
+                </div>
+
+                <div class="premium-card text-center" style="padding: 40px 20px;">
+                    <img loading="lazy" decoding="async" class="a-emoji-lg" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f409.png" width="64" height="64" alt="🐉">
+                    <br><div style="background: rgba(212, 175, 55, 0.1); color: var(--primary-light); border: 1px solid rgba(212, 175, 55, 0.2); font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 20px; display: inline-block; margin-bottom: 15px; text-transform: uppercase;">Acesso Premium</div>
+                    <h3 style="font-size: 20px; font-weight: 500; margin-bottom: 10px;">A Besta e o Falso Profeta</h3>
+                    <div style="font-size: 18px; margin-top:20px;">
+                        <span style="text-decoration: line-through; opacity: 0.4;">De R$ 147 por</span> <span style="color: #6ed196; font-weight: 700; font-size: 19px;">ZERO</span>
+                    </div>
+                </div>
+
+                <div class="premium-card text-center" style="padding: 40px 20px;">
+                    <img loading="lazy" decoding="async" class="a-emoji-lg" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f311.png" width="64" height="64" alt="🌑">
+                    <br><div style="background: rgba(212, 175, 55, 0.1); color: var(--primary-light); border: 1px solid rgba(212, 175, 55, 0.2); font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 20px; display: inline-block; margin-bottom: 15px; text-transform: uppercase;">Acesso Premium</div>
+                    <h3 style="font-size: 20px; font-weight: 500; margin-bottom: 10px;">A Análise do Anticristo</h3>
+                    <div style="font-size: 18px; margin-top:20px;">
+                        <span style="text-decoration: line-through; opacity: 0.4;">De R$ 147 por</span> <span style="color: #6ed196; font-weight: 700; font-size: 19px;">ZERO</span>
+                    </div>
+                </div>
+
+                <div class="premium-card text-center" style="padding: 40px 20px;">
+                    <img loading="lazy" decoding="async" class="a-emoji-lg" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f377.png" width="64" height="64" alt="🍷">
+                    <br><div style="background: rgba(212, 175, 55, 0.1); color: var(--primary-light); border: 1px solid rgba(212, 175, 55, 0.2); font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 20px; display: inline-block; margin-bottom: 15px; text-transform: uppercase;">Acesso Premium</div>
+                    <h3 style="font-size: 20px; font-weight: 500; margin-bottom: 10px;">A Grande Prostituta</h3>
+                    <div style="font-size: 18px; margin-top:20px;">
+                        <span style="text-decoration: line-through; opacity: 0.4;">De R$ 97 por</span> <span style="color: #6ed196; font-weight: 700; font-size: 19px;">ZERO</span>
+                    </div>
+                </div>
+
+                <div class="premium-card text-center" style="padding: 40px 20px;">
+                    <img loading="lazy" decoding="async" class="a-emoji-lg" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f3ba.png" width="64" height="64" alt="🎺">
+                    <br><div style="background: rgba(212, 175, 55, 0.1); color: var(--primary-light); border: 1px solid rgba(212, 175, 55, 0.2); font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 20px; display: inline-block; margin-bottom: 15px; text-transform: uppercase;">Acesso Premium</div>
+                    <h3 style="font-size: 20px; font-weight: 500; margin-bottom: 10px;">As Sete Trombetas</h3>
+                    <div style="font-size: 18px; margin-top:20px;">
+                        <span style="text-decoration: line-through; opacity: 0.4;">De R$ 127 por</span> <span style="color: #6ed196; font-weight: 700; font-size: 19px;">ZERO</span>
+                    </div>
+                </div>
+
+                <div class="premium-card text-center" style="padding: 40px 20px;">
+                    <img loading="lazy" decoding="async" class="a-emoji-lg" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f3f0.png" width="64" height="64" alt="🏰">
+                    <br><div style="background: rgba(212, 175, 55, 0.1); color: var(--primary-light); border: 1px solid rgba(212, 175, 55, 0.2); font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 20px; display: inline-block; margin-bottom: 15px; text-transform: uppercase;">Acesso Premium</div>
+                    <h3 style="font-size: 20px; font-weight: 500; margin-bottom: 10px;">A Nova Jerusalém</h3>
+                    <div style="font-size: 18px; margin-top:20px;">
+                        <span style="text-decoration: line-through; opacity: 0.4;">De R$ 97 por</span> <span style="color: #6ed196; font-weight: 700; font-size: 19px;">ZERO</span>
+                    </div>
+                </div>
+
+                <div class="premium-card text-center" style="padding: 40px 20px;">
+                    <img loading="lazy" decoding="async" class="a-emoji-lg" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/26a1.png" width="64" height="64" alt="⚡">
+                    <br><div style="background: rgba(212, 175, 55, 0.1); color: var(--primary-light); border: 1px solid rgba(212, 175, 55, 0.2); font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 20px; display: inline-block; margin-bottom: 15px; text-transform: uppercase;">Acesso Premium</div>
+                    <h3 style="font-size: 20px; font-weight: 500; margin-bottom: 10px;">A Grande Tribulação</h3>
+                    <div style="font-size: 18px; margin-top:20px;">
+                        <span style="text-decoration: line-through; opacity: 0.4;">De R$ 127 por</span> <span style="color: #6ed196; font-weight: 700; font-size: 19px;">ZERO</span>
+                    </div>
+                </div>
+
+                <div class="premium-card text-center" style="padding: 40px 20px;">
+                    <img loading="lazy" decoding="async" class="a-emoji-lg" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f40e.png" width="64" height="64" alt="🐎">
+                    <br><div style="background: rgba(212, 175, 55, 0.1); color: var(--primary-light); border: 1px solid rgba(212, 175, 55, 0.2); font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 20px; display: inline-block; margin-bottom: 15px; text-transform: uppercase;">Acesso Premium</div>
+                    <h3 style="font-size: 20px; font-weight: 500; margin-bottom: 10px;">Os 4 Cavaleiros</h3>
+                    <div style="font-size: 18px; margin-top:20px;">
+                        <span style="text-decoration: line-through; opacity: 0.4;">De R$ 147 por</span> <span style="color: #6ed196; font-weight: 700; font-size: 19px;">ZERO</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 60px; display: flex; flex-direction: column; align-items: center;">
+                <a href="#summary" class="cta-btn" style="max-width: 450px;">
+                    <span>SIM, QUERO ENTENDER A BÍBLIA DE VERDADE →</span>
+                    <span>Pagamento Único • Acesso Vitalício</span>
+                </a>
+                <div class="secure-badges">
+                    <span><img loading="lazy" decoding="async" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f512.png" width="16" height="16" alt="🔒" style="width:16px; height:16px;"> Compra Segura</span>
+                    <span><img loading="lazy" decoding="async" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f4b3.png" width="16" height="16" alt="💳" style="width:16px; height:16px;"> Checkout Auditado</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ANCORAGEM DE PREÇO -->
+    <section id="reality" style="position: relative;" class="bg-alt">
+        <div class="container text-center" style="max-width: 800px;">
+            <p style="text-transform: uppercase; letter-spacing: 0.1em; color: var(--primary); font-size: 13px; font-weight: 700; margin-bottom: 20px;">A REALIDADE</p>
+            <h2 class="mb-40" style="line-height: 1.4;">Uma viagem para a Terra Santa custa <span style="color: #ff5e5e; text-decoration: line-through;">+R$15.000</span>.<br>Este guia te leva lá por <span style="font-style: italic; color: var(--primary);">R$37</span>.</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 40px;">
+                <div class="premium-card text-center" style="padding: 30px 20px; background: rgba(255,255,255,0.02);">
+                    <img loading="lazy" decoding="async" style="width: 40px; height: 40px; opacity: 0.5; margin-bottom: 15px;" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f30d.png" width="64" height="64" alt="Globo">
+                    <p style="font-size: 15px; font-weight: 500; color: #fff; margin-bottom: 10px;">Viagem à Terra Santa</p>
+                    <p style="color: #ff5e5e; font-weight: 700; font-size: 18px; text-decoration: line-through;">R$15.000+</p>
+                </div>
+                <div class="premium-card text-center" style="padding: 30px 20px; background: rgba(255,255,255,0.02);">
+                    <img loading="lazy" decoding="async" style="width: 40px; height: 40px; opacity: 0.5; margin-bottom: 15px;" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f4d6.png" width="64" height="64" alt="Livro">
+                    <p style="font-size: 15px; font-weight: 500; color: #fff; margin-bottom: 10px;">Cursos de Teologia</p>
+                    <p style="color: #ff5e5e; font-weight: 700; font-size: 18px; text-decoration: line-through;">R$1.497+</p>
+                </div>
+                <div class="premium-card text-center" style="padding: 30px 20px; background: rgba(255,255,255,0.02);">
+                    <img loading="lazy" decoding="async" style="width: 40px; height: 40px; opacity: 0.5; margin-bottom: 15px;" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f4dc.png" width="64" height="64" alt="Pergaminho">
+                    <p style="font-size: 15px; font-weight: 500; color: #fff; margin-bottom: 10px;">Atlas e Impressos</p>
+                    <p style="color: #ff5e5e; font-weight: 700; font-size: 18px; text-decoration: line-through;">R$350+</p>
+                </div>
+                <div class="premium-card text-center" style="margin-top: 25px; padding: 30px 20px; background: rgba(212, 175, 55, 0.05); border: 1px solid rgba(212, 175, 55, 0.3); position: relative;">
+                    <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--primary); color: #000; font-size: 10px; font-weight: 700; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; white-space: nowrap;">Melhor Opção</div>
+                    <img loading="lazy" decoding="async" style="width: 40px; height: 40px; filter: drop-shadow(0 0 10px rgba(212,175,55,0.5)); margin-bottom: 15px; margin-top: 5px;" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/26a1.png" width="64" height="64" alt="Raio">
+                    <p style="font-size: 15px; font-weight: 500; color: #fff; margin-bottom: 10px;">A Bíblia Revelada</p>
+                    <p class="gradient-text" style="font-weight: 800; font-size: 22px;">R$37</p>
+                </div>
+            </div>
+            
+            <a href="#summary" class="cta-btn" style="max-width: 450px; margin: 0 auto;">
+                <span>SIM, QUERO ENTENDER A BÍBLIA DE VERDADE →</span>
+                <span>Acesso imediato • Acesso vitalício • 7 Dias de Garantia</span>
+            </a>
+            <div class="secure-badges">
+                <span><img loading="lazy" decoding="async" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f512.png" width="16" height="16" alt="🔒" style="width:16px; height:16px;"> Compra Segura</span>
+                <span><img loading="lazy" decoding="async" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f4b3.png" width="16" height="16" alt="💳" style="width:16px; height:16px;"> Checkout Auditado</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- S14 -->
+    <section id="faq" >
+        <div class="container" style="max-width: 800px;">
+            <h2 class="mb-40 text-center" style="font-size: 32px;">Ainda com dúvidas?<br><span class="gradient-text">Entendemos.</span></h2>
+            
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <div class="premium-card" style="padding: 30px; text-align: left;">
+                    <p style="font-size: 18px; font-weight: 600; color: #fff; margin-bottom: 15px; display: flex; gap: 10px; align-items: flex-start;">
+                        <span style="color: #ff5e5e; font-size: 20px; display: inline-block; width: 20px; height: 20px;">❓</span> O material é muito técnico ou difícil de entender?
+                    </p>
+                    <p style="font-size: 16px; color: var(--text-dim); display: flex; gap: 10px; align-items: flex-start; line-height: 1.6;">
+                        <span style="font-size: 20px; display: inline-block; width: 20px; height: 20px;">✅</span> <span>De jeito nenhum. Foi feito para ser acessível a todos — do iniciante ao pastor com anos de experiência. As imagens falam por si só e tornam tudo mais claro e envolvente.</span>
+                    </p>
+                </div>
+
+                <div class="premium-card" style="padding: 30px; text-align: left;">
+                    <p style="font-size: 18px; font-weight: 600; color: #fff; margin-bottom: 15px; display: flex; gap: 10px; align-items: flex-start;">
+                        <span style="color: #ff5e5e; font-size: 20px; display: inline-block; width: 20px; height: 20px;">❓</span> Vale a pena por R$37?
+                    </p>
+                    <p style="font-size: 16px; color: var(--text-dim); display: flex; gap: 10px; align-items: flex-start; line-height: 1.6;">
+                        <span style="font-size: 20px; display: inline-block; width: 20px; height: 20px;">✅</span> <span>Um curso de teologia custa R$1.497+. Uma Bíblia comentada custa R$150+. Aqui você tem o contexto completo e visual por R$37 — menos que uma pizza, com acesso vitalício.</span>
+                    </p>
+                </div>
+                
+                <div class="premium-card" style="padding: 30px; text-align: left;">
+                    <p style="font-size: 18px; font-weight: 600; color: #fff; margin-bottom: 15px; display: flex; gap: 10px; align-items: flex-start;">
+                        <span style="color: #ff5e5e; font-size: 20px; display: inline-block; width: 20px; height: 20px;">❓</span> Como recebo meu acesso?
+                    </p>
+                    <p style="font-size: 16px; color: var(--text-dim); display: flex; gap: 10px; align-items: flex-start; line-height: 1.6;">
+                        <span style="font-size: 20px; display: inline-block; width: 20px; height: 20px;">✅</span> <span>Acesso instantâneo. Logo após a confirmação pela plataforma segura, você recebe no e-mail cadastrado a sua área de membros para acessar o acervo e todos os bônus de qualquer lugar.</span>
+                    </p>
+                </div>
+
+                <div class="premium-card" style="padding: 30px; text-align: left;">
+                    <p style="font-size: 18px; font-weight: 600; color: #fff; margin-bottom: 15px; display: flex; gap: 10px; align-items: flex-start;">
+                        <span style="color: #ff5e5e; font-size: 20px; display: inline-block; width: 20px; height: 20px;">❓</span> E se eu não gostar? Existe Garantia?
+                    </p>
+                    <p style="font-size: 16px; color: var(--text-dim); display: flex; gap: 10px; align-items: flex-start; line-height: 1.6;">
+                        <span style="font-size: 20px; display: inline-block; width: 20px; height: 20px;">✅</span> <span>Você tem nossa Garantia Blindada de 7 Dias. Se você não ficar maravilhado com a clareza e estrutura, é só mandar um e-mail. Devolvemos 100% do seu dinheiro, sem letras miúdas. Risco zero.</span>
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- S13 -->
+    <section id="summary">
+        <div class="container" style="max-width: 850px;">
+            <h2 class="mb-40">O Resumo da Antiga e Nova <span class="gradient-text">Aliança:</span></h2>
+            
+            <div class="premium-card offer-card">
+                <div class="offer-main">
+                    <div class="offer-right">
+                        <ul class="summary-list" style="list-style: none; display: flex; flex-direction: column; gap: 15px; text-align: left;">
+                            <li style="display: flex; justify-content: space-between; align-items: center; background: rgba(212,175,55,0.05); border: 1px solid rgba(212,175,55,0.2); padding: 18px 20px; border-radius: 12px; box-shadow: inset 0 0 20px rgba(0,0,0,0.2);">
+                                <div style="display: flex; align-items: center;">
+                                    <img loading="lazy" decoding="async" style="width: 38px; height: 38px; margin-right: 15px; filter: drop-shadow(0 0 8px rgba(212,175,55,0.4)); flex-shrink: 0;" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f4d6.png" width="38" height="38" alt="📖">
+                                    <div>
+                                        <div style="font-size: 19px; color: #fff; font-weight: 600;">A Bíblia Revelada</div>
+                                        <div style="font-size: 14px; color: var(--primary-light); opacity: 0.9; margin-top: 4px; font-weight: 300;">Panorama Completo Estruturado</div>
+                                    </div>
+                                </div>
+                                <span style="text-decoration: line-through; color: #ff5e5e; opacity: 0.9; font-weight: 600; font-size: 18px;">R$ 197</span>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; align-items: center; background: rgba(212,175,55,0.05); border: 1px solid rgba(212,175,55,0.2); padding: 18px 20px; border-radius: 12px; box-shadow: inset 0 0 20px rgba(0,0,0,0.2);">
+                                <div style="display: flex; align-items: center;">
+                                    <img loading="lazy" decoding="async" style="width: 38px; height: 38px; margin-right: 15px; filter: drop-shadow(0 0 8px rgba(212,175,55,0.4)); flex-shrink: 0;" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f381.png" width="38" height="38" alt="🎁">
+                                    <div>
+                                        <div style="font-size: 19px; color: #fff; font-weight: 600;">8 Materiais Exclusivos</div>
+                                        <div style="font-size: 14px; color: var(--primary-light); opacity: 0.9; margin-top: 4px; font-weight: 300;">Acervo de Aprofundamento Teológico</div>
+                                    </div>
+                                </div>
+                                <span style="text-decoration: line-through; color: #ff5e5e; opacity: 0.9; font-weight: 600; font-size: 18px;">R$ 402</span>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.05); padding: 15px 10px; margin-top: 5px;">
+                                <div style="display: flex; align-items: center; gap: 12px;">
+                                    <img loading="lazy" decoding="async" style="width: 18px; height: 18px;" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f48e.png" width="18" height="18" alt="💎">
+                                    <span style="font-size: 16px; color: #e6e6e6; font-weight: 400;">Acesso Vitalício Irrestrito</span>
+                                </div>
+                                <span style="background: rgba(110, 209, 150, 0.15); border: 1px solid rgba(110, 209, 150, 0.3); color: #6ed196; padding: 4px 12px; border-radius: 6px; font-weight: 600; font-size: 13px; text-transform: uppercase;">Bonificado</span>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.05); padding: 15px 10px;">
+                                <div style="display: flex; align-items: center; gap: 12px;">
+                                    <img loading="lazy" decoding="async" style="width: 18px; height: 18px;" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2705.png" width="18" height="18" alt="✅">
+                                    <span style="font-size: 16px; color: #e6e6e6; font-weight: 400;">Garantia Blindada de Satisfação (7 Dias)</span>
+                                </div>
+                                <span style="background: rgba(110, 209, 150, 0.15); border: 1px solid rgba(110, 209, 150, 0.3); color: #6ed196; padding: 4px 12px; border-radius: 6px; font-weight: 600; font-size: 13px; text-transform: uppercase;">Bonificado</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="offer-footer">
+                    <div class="final-pricing text-center">
+                        <p style="font-size: 18px; color: var(--primary-light); margin-bottom: 25px; font-style: italic; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">"Sinceramente, você está tirando uma vantagem absurda de mim. Você vai levar a estrutura completa + os 8 bônus exclusivos do Apocalipse por um valor quase simbólico. E o risco é todo meu."</p>
+                        <p style="font-size: 15px; opacity: 0.5; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 10px;">Valor total real: <span style="text-decoration: line-through;">R$ 599,00</span></p>
+                        <div class="gradient-text" style="font-size: 56px; margin-bottom: 10px; font-family: 'Outfit', sans-serif;">R$ 37,00</div>
+                        <p style="font-size: 18px; font-weight: 500; color: var(--primary-light);">ou 5 vezes de R$ 8,19*</p>
+                    </div>
+
+                    <a href="https://pay.wiapy.com/VFkUkQv5uX" class="cta-btn final-checkout-cta" id="final-cta">
+                        <span style="font-size: 21px; font-weight: 800;">SIM! QUERO ACESSO IMEDIATO →</span>
+                        <span style="font-size: 13px; opacity: 0.9;">Clique para finalizar sua inscrição na plataforma segura</span>
+                    </a>
+                    <div class="secure-badges">
+                        <span><img loading="lazy" decoding="async" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f512.png" width="16" height="16" alt="🔒" style="width:16px; height:16px;"> Compra Segura</span>
+                        <span><img loading="lazy" decoding="async" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f4b3.png" width="16" height="16" alt="💳" style="width:16px; height:16px;"> Checkout Auditado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" style="padding: 50px 15px 120px; text-align: center; background: #000; border-top: 1px solid rgba(212, 175, 55, 0.1);">
+        <div class="container">
+            <p class="gradient-text" style="font-size: 26px; font-weight: 700; margin-bottom: 10px; letter-spacing: -0.02em;">A Bíblia Revelada</p>
+            <p style="font-size: 14px; opacity: 0.5; margin-top: 10px; letter-spacing: 0.05em; text-transform: uppercase;">O Horizonte Fiel das Escrituras</p>
+            
+            <div style="margin-top: 30px; display: center; justify-content: center;">
+                <a href="https://wa.me/5519936220730" target="_blank" style="background: rgba(37, 211, 102, 0.1); border: 1px solid rgba(37, 211, 102, 0.4); color: #25D366; padding: 12px 25px; border-radius: 8px; font-weight: 500; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; transition: 0.3s;" onmouseover="this.style.background='rgba(37, 211, 102, 0.2)'" onmouseout="this.style.background='rgba(37, 211, 102, 0.1)'">
+                    Dúvidas? Fale com o Suporte
+                </a>
+            </div>
+
+            <div class="legal-links" style="margin-top: 40px; margin-bottom: 30px; display: flex; justify-content: center; gap: 30px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em;">
+                <a href="#" style="color: var(--text-dim); text-decoration: none; transition: 0.3s;">Termos Legais</a>
+                <a href="#" style="color: var(--text-dim); text-decoration: none; transition: 0.3s;">Privacidade</a>
+            </div>
+            
+            <p style="font-size: 12px; opacity: 0.3;">© <span id="current-year">2026</span> Todos os direitos reservados à Propriedade Intelectual A Bíblia Revelada.</p>
+        </div>
+    </footer>
+
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // --- 1. FAQ Accordion (Nova Estrutura Base) ---
+    document.querySelectorAll('.faq-toggle').forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('.icon');
+            const isOpen = content.style.maxHeight && content.style.maxHeight !== "0px";
+
+            // Close all others
+            document.querySelectorAll('.faq-content').forEach(c => {
+                c.style.maxHeight = "0px";
+                const otherIcon = c.previousElementSibling.querySelector('.icon');
+                if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+            });
+
+            // Toggle current
+            if (!isOpen) {
+                content.style.maxHeight = content.scrollHeight + "px";
+                if (icon) icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.style.maxHeight = "0px";
+                if (icon) icon.style.transform = 'rotate(0deg)';
+            }
+        });
+    });
+
+    // --- 2. Countdown Timer (30 minutes, persistent) ---
+    const TOTAL_MINUTES = 30;
+    const TOTAL_SECONDS = TOTAL_MINUTES * 60;
+    
+    let endTime = localStorage.getItem('biblia_revelada_endTime');
+    const now = Math.floor(Date.now() / 1000);
+    
+    if (!endTime || now > parseInt(endTime)) {
+        endTime = now + TOTAL_SECONDS;
+        localStorage.setItem('biblia_revelada_endTime', endTime);
+    } else {
+        endTime = parseInt(endTime);
+    }
+    
+    const countdownDisplay = document.getElementById('countdown');
+    
+    function updateCountdown() {
+        const currentTime = Math.floor(Date.now() / 1000);
+        let remaining = endTime - currentTime;
+        
+        if (remaining <= 0) {
+            countdownDisplay.textContent = '00:00';
+            return;
+        }
+        
+        const m = Math.floor(remaining / 60);
+        const s = remaining % 60;
+        
+        const minutesStr = m < 10 ? "0" + m : m;
+        const secondsStr = s < 10 ? "0" + s : s;
+        countdownDisplay.textContent = minutesStr + ":" + secondsStr;
+        
+        requestAnimationFrame(updateCountdown);
+    }
+    
+    requestAnimationFrame(updateCountdown);
+    // Animação foi removida conforme pedido pelo usuário.
+
+    // --- 4. Current Year ---
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+    // --- 5. Smooth scrolling for anchor links ---
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+
+</script>
+
+    <div id="live-notifications" class="notif-container"></div>
+
+    <script>
+    // === CONFIGURAÇÃO (Adaptado p/ Alta Conversão Luxo) ===
+    let savedVagas = localStorage.getItem('vagasRestantes');
+    let vagas = savedVagas ? parseInt(savedVagas) : 42;
+    // Se por algum motivo as vagas estiverem zeradas no cache, reiniciamos para manter a urgência
+    if (vagas <= 0) vagas = 5;
+    const nomes = ["João de SP", "Maria de SC", "Pedro do RJ", "Ana de MG", "Lucas do PR", "Fernanda da BA", "Carlos do RS", "Juliana de GO"];
+    const mensagens = [
+      "acabou de garantir A Bíblia Revelada + 8 bônus!",
+      "garantiu o passe para domínio da Palavra!",
+      "acabou de adquirir o panorama completo do Apocalipse!",
+      "transformou sua fé com A Bíblia Revelada agora!"
+    ];
+
+    // Atualiza o contador na página
+    function atualizarContador() {
+      const contadorEl = document.getElementById('contador-vagas');
+      if (contadorEl) contadorEl.textContent = vagas;
+      localStorage.setItem('vagasRestantes', vagas);
+    }
+
+    // Cria notificação
+    function criarNotificacao() {
+      if (vagas <= 0) return;
+
+      const notif = document.createElement('div');
+      notif.style.cssText = `
+        background: rgba(8, 4, 11, 0.95);
+        border: 1px solid rgba(212, 175, 55, 0.3); 
+        color: var(--primary-light); 
+        padding: 6px 10px; 
+        margin-bottom: 8px; 
+        border-radius: 8px; 
+        box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+        display: flex; 
+        align-items: center; 
+        gap: 10px; 
+        font-size: 11px;
+        animation: slideInNotz 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+      `;
+      
+      // Inject animation keyframes if not present
+      if (!document.getElementById('slideInAnim')) {
+        const anim = document.createElement('style');
+        anim.id = 'slideInAnim';
+        anim.innerHTML = '@keyframes slideInNotz { from { transform: translateX(-100%) scale(0.9); opacity: 0; } to { transform: translateX(0) scale(1); opacity: 1; } }';
+        document.head.appendChild(anim);
+      }
+
+      notif.innerHTML = `
+        <img loading="lazy" decoding="async" style="width: 18px; height: 18px; filter: drop-shadow(0 0 8px rgba(212,175,55,0.4)); flex-shrink: 0;" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f514.png" width="64" height="64" alt="Sino">
+        <div style="line-height: 1.4;">
+          <strong style="color: #fff; font-weight: 500; font-size: 11px;">${nomes[Math.floor(Math.random()*nomes.length)]}</strong><br>
+          <span style="color: var(--text-dim); font-weight: 300;">${mensagens[Math.floor(Math.random()*mensagens.length)]}</span>
+        </div>
+      `;
+
+      document.getElementById('live-notifications').appendChild(notif);
+
+      // Remove a notificação depois de 5 segundos suavemente
+      setTimeout(() => {
+          notif.style.opacity = '0';
+          notif.style.transform = 'translateY(10px)';
+          notif.style.transition = 'all 0.4s ease';
+          setTimeout(() => notif.remove(), 400);
+      }, 5000);
+
+      // Diminui vaga
+      vagas--;
+      atualizarContador();
+    }
+
+    // Inicia as notificações a cada 33 segundos
+    setInterval(criarNotificacao, 33000);
+
+    // Primeira notificação rápida ao carregar
+    setTimeout(criarNotificacao, 2500);
+
+    
+    
+    atualizarContador();
+    </script>
+
+    </main>
+</body>
+</html>
