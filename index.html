@@ -1134,10 +1134,11 @@ html { scrollbar-color: var(--primary-dark) var(--bg-deep); }
     <section id="planos">
         <div class="container" style="max-width: 1000px; text-align: center;">
             <h2 class="mb-40">Escolha Seu <span class="gradient-text">Plano:</span></h2>
-            
-            <div class="plans-container">
+
+            <!-- TABELA DE PREÇOS -->
+            <div class="plans-container" style="align-items: stretch;">
                 <!-- PLANO BÁSICO -->
-                <div class="plan-card">
+                <div class="plan-card" style="height: fit-content;">
                     <div class="plan-title">PLANO BÁSICO</div>
                     <div class="plan-subtitle">Para quem quer apenas testar</div>
                     
@@ -1156,25 +1157,53 @@ html { scrollbar-color: var(--primary-dark) var(--bg-deep); }
                 </div>
 
                 <!-- PLANO COMPLETO -->
-                <div class="plan-card highlight">
+                <div class="plan-card highlight" style="padding-bottom: 25px;">
                     <div class="plan-highlight-badge">★ MAIS ESCOLHIDO</div>
                     <div class="plan-title">PLANO COMPLETO</div>
-                    <div class="plan-subtitle">O aprofundamento total com 8 bônus</div>
+                    <div class="plan-subtitle">O aprofundamento total com todos os bônus</div>
                     
-                    <div class="plan-price">
-                        <div class="plan-price-old">De R$ 197,00</div>
-                        <div class="plan-price-new">R$ 37,00</div>
+                    <div style="margin-top: 10px; margin-bottom: 20px;">
+                        <span style="background: rgba(37, 211, 102, 0.15); color: #4ade80; padding: 4px 10px; border-radius: 4px; font-weight: 700; font-size: 13px; display: inline-flex; align-items: center; gap: 5px; border: 1px dashed rgba(37, 211, 102, 0.4);">
+                            <img loading="lazy" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f3ab.png" width="16" height="16" alt="🎫"> Cupom Aplicado: BÍBLIA2026
+                        </span>
                     </div>
                     
-                    <ul class="plan-features">
-                        <li><img loading="lazy" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2705.png" width="18" height="18" alt="✅"> Mapa Principal</li>
-                        <li><img loading="lazy" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2705.png" width="18" height="18" alt="✅"> 8 Tratados do Apocalipse</li>
-                        <li><img loading="lazy" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2705.png" width="18" height="18" alt="✅"> Acesso Vitalício</li>
-                    </ul>
+                    <div class="plan-price" style="margin-bottom: 15px;">
+                        <div class="plan-price-old">De R$ 197,00</div>
+                        <div class="plan-price-new" style="font-size: 52px; line-height: 1;">R$ 37,00</div>
+                        <div style="font-size: 12px; color: var(--text-dim); text-transform: uppercase; margin-top: 5px;">Pagamento Único</div>
+                    </div>
+
+                    <div style="font-size: 14px; color: var(--primary-light); margin-bottom: 25px; display: flex; align-items: center; justify-content: center; gap: 5px;">
+                        <img loading="lazy" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f4b0.png" width="16" height="16" alt="💰"> <strong style="color: #fff;">Desconto adicinal liberado no PIX</strong>
+                    </div>
                     
-                    <a href="https://pay.wiapy.com/VFkUkQv5uX" class="cta-btn final-checkout-cta" style="min-height: 60px;">
-                        <span style="font-size: 18px; font-weight: 800;">SIM! QUERO RENOVAR MINHA FÉ</span>
+                    <a href="https://pay.wiapy.com/VFkUkQv5uX" class="cta-btn" style="min-height: 70px; margin-bottom: 15px; background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 15px 15px; border: 1px solid #34d399; box-shadow: 0 0 30px rgba(16, 185, 129, 0.4) !important;">
+                        <span style="font-size: 18px; font-weight: 800; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">SIM! QUERO O ACERVO COMPLETO →</span>
                     </a>
+
+                    <!-- BÔNUS INTEGRADOS -->
+                    <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(212,175,55,0.2); border-radius: 12px; padding: 25px 20px; text-align: left; margin-top: 30px;">
+                        <p style="font-size: 16px; font-weight: 700; color: var(--primary-light); margin-bottom: 20px; display: flex; align-items: flex-start; gap: 10px; line-height: 1.4;">
+                            <img loading="lazy" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f381.png" width="20" height="20" alt="🎁" style="margin-top: 2px;"> 
+                            VOCÊ VAI LEVAR MAIS DE R$ 197 EM BÔNUS GRATUITOS:
+                        </p>
+                        <ul class="plan-features" style="font-size: 15px; margin-bottom: 25px;">
+                            <li style="margin-bottom: 12px;"><img loading="lazy" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2705.png" width="16" height="16" alt="✅" style="flex-shrink: 0; align-self: flex-start; margin-top: 3px;"> <span><strong style="color: #fff;">O Guia Rápido do Apocalipse</strong> (Os 7 Selos e a Besta)</span></li>
+                            <li style="margin-bottom: 12px;"><img loading="lazy" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2705.png" width="16" height="16" alt="✅" style="flex-shrink: 0; align-self: flex-start; margin-top: 3px;"> <span><strong style="color: #fff;">Dicionário Visual</strong> de Personagens Bíblicos</span></li>
+                            <li style="margin-bottom: 12px;"><img loading="lazy" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2705.png" width="16" height="16" alt="✅" style="flex-shrink: 0; align-self: flex-start; margin-top: 3px;"> <span>Plano de Leitura <strong style="color: #fff;">"Bíblia em 90 Dias"</strong></span></li>
+                            <li style="margin-bottom: 12px;"><img loading="lazy" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2705.png" width="16" height="16" alt="✅" style="flex-shrink: 0; align-self: flex-start; margin-top: 3px;"> <span><strong style="color: #fff;">Guia de Contexto Histórico</strong> e Mapas Antigos</span></li>
+                            <li style="margin-bottom: 0px;"><img loading="lazy" src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/2705.png" width="16" height="16" alt="✅" style="flex-shrink: 0; align-self: flex-start; margin-top: 3px;"> <span><strong style="color: #fff;">Acesso Vitalício</strong> + Atualizações Mensais</span></li>
+                        </ul>
+
+                        <!-- GATILHOS DE CONFIANÇA -->
+                        <div style="display: flex; flex-direction: column; gap: 12px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; font-size: 13px; color: var(--text-dim);">
+                            <span style="display: flex; align-items: center; gap: 8px;"><img src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f4f1.png" width="14" height="14" alt="📱"> Acesso Imediato pelo Celular</span>
+                            <span style="display: flex; align-items: center; gap: 8px;"><img src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f6e1-fe0f.png" width="14" height="14" alt="🛡️"> Pagamento 100% Seguro</span>
+                            <span style="display: flex; align-items: center; gap: 8px;"><img src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f4e5.png" width="14" height="14" alt="📥"> Materiais 100% Baixáveis (PDF)</span>
+                            <span style="display: flex; align-items: center; gap: 8px;"><img src="https://unpkg.com/emoji-datasource-apple@15.0.0/img/apple/64/1f4ac.png" width="14" height="14" alt="💬"> Suporte Exclusivo via WhatsApp</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -1436,15 +1465,15 @@ document.addEventListener('DOMContentLoaded', () => {
             </ul>
             
             <div style="margin-bottom: 25px;">
-                <p style="font-size: 16px; color: var(--text-dim); margin-bottom: 5px; font-weight: 500; text-transform: uppercase;">De R$ 197,00 por apenas</p>
+                <p style="font-size: 16px; color: var(--text-dim); margin-bottom: 5px; font-weight: 500; text-transform: uppercase;">De R$ 37,00 por apenas</p>
                 <p class="gradient-text" style="font-size: 32px; font-weight: 800; font-family: 'Outfit', sans-serif;">R$ 27,00 no total!</p>
             </div>
             
-            <a href="URL_LINK_CHECKOUT_27_AQUI" class="cta-btn btn-pulse-green" style="background: linear-gradient(135deg, #1fa54e 0%, #157336 100%); border: 1px solid #2ced6e; color: #fff; min-height: 60px; margin-bottom: 20px; transition: transform 0.3s; transform-origin: center;">
+            <a href="https://pay.wiapy.com/xdNIGpDmFb" class="cta-btn btn-pulse-green" style="background: linear-gradient(135deg, #1fa54e 0%, #157336 100%); border: 1px solid #2ced6e; color: #fff; min-height: 60px; margin-bottom: 20px; transition: transform 0.3s; transform-origin: center;">
                 <span style="font-size: 15px; font-weight: 800;">SIM! QUERO O PACOTE COMPLETO POR R$ 27</span>
             </a>
             
-            <a href="https://pay.wiapy.com/VFkUkQv5uX" style="color: rgba(255,255,255,0.4); font-size: 13px; text-decoration: underline; transition: 0.3s; display: inline-block; line-height: 1.5;">
+            <a href="https://pay.wiapy.com/sChlOijri" style="color: rgba(255,255,255,0.4); font-size: 13px; text-decoration: underline; transition: 0.3s; display: inline-block; line-height: 1.5;">
                 Não, obrigado. Vou ficar apenas com o mapa básico e perder os bônus.
             </a>
         </div>
